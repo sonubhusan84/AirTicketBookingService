@@ -1,4 +1,4 @@
-import { StatusCodes } from "http-status-codes";
+const { StatusCodes } = "http-status-codes";
 
 class ValidationError extends Error{
     constructor(error){

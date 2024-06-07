@@ -1,9 +1,9 @@
-import {
+const {
 	ReasonPhrases,
 	StatusCodes,
 	getReasonPhrase,
 	getStatusCode,
-} from 'http-status-codes';
+} = 'http-status-codes';
 
 class ServiceError extends Error{
     constructor(

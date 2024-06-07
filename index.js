@@ -12,7 +12,7 @@ const setupAndStartServer = async =>{
     app.listen(PORT,()=>{
         console.log(`Server started on port : ${PORT}`);
         if(process.env.DB_SYNC){
-            db.Sequelize.DB_SYNC({alert:true});
+            db.sequelize.sync({alter:true})
         }
     })
     
